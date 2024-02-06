@@ -11,9 +11,7 @@ class ConferenceController extends AbstractController
     #[Route('/', name: 'app_conference')]
     public function index(): Response
     {
-        return $this->render('conference/index.html.twig', [
-            'controller_name' => 'ConferenceController',
-        ]);
+       
         return new Response(<<<EOF
                 <html>
                     <body>
